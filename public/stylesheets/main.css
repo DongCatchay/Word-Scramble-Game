@@ -1,0 +1,30 @@
+body{
+	margin: auto;
+    font:13px/1.3 'Lucida Grande',sans-serif;
+    color:#666;
+    width: 500px;
+    background: darkgrey;
+}
+
+.container{
+	margin: 10em auto;
+	padding: 10px;
+    background: gainsboro;    
+    border: 1px solid orange;
+}
+
+#characters{
+	background: #666;
+	color: white;
+	height: 1.2em;
+}
+
+#input{
+	background: #666;
+	color: white;
+	height: 1.2em;
+}
+
+.result{
+	display: none;
+}
