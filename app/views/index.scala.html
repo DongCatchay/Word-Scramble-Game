@@ -1,0 +1,43 @@
+@*
+* This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `String`
+* for the characters.
+*@
+@(title: String, characters: String)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ @* Here's where we render the page title `String`. *@
+ <title>@title</title>
+ <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+ <script src="@routes.Assets.versioned("javascripts/jquery-3.1.1.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.versioned("javascripts/script.js")" type="text/javascript"></script>
+</head>
+<body>
+ <!-- Container -->
+ <div class="container">
+
+  <!-- Header game-->
+  <h1>Word Scramble Game</h1>
+
+  <hr>
+
+  <!-- The characters -->
+  <label>Characters of the word: </label>
+  <h3 id = "characters">@characters</h3>
+
+  <!-- The word user typed -->
+  <label>The word you typed: </label>
+  <h3 id = "input"></h3>
+  <hr>
+  <!-- bloc result -->
+  <div class="result">
+   <label>RESULT</label>
+   <!-- result message -->
+   <h1 id="result"></h1>
+  </div>
+ </div>
+</body>
+</html>
